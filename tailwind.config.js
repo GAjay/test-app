@@ -3,6 +3,10 @@ export default {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
       extend: {
+        backgroundImage: {
+          'hero-pattern': "url('/img/hero-pattern.svg')",
+          'footer-texture': "url('/public/banner.jpg')",
+        },
         keyframes: {
           typing: {
             "0%": {
