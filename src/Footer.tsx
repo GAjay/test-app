@@ -1,20 +1,4 @@
-const stats = [
-    {
-      id: 1,
-      img: "https://www.man-med.com/wp-content/uploads/2023/05/make-in-india.webp",
-      value: "44 million",
-    },
-    {
-      id: 2,
-      img: "https://www.man-med.com/wp-content/uploads/2023/12/Digital_India_logo.webp",
-      value: "$119 trillion",
-    },
-    {
-      id: 3,
-      img: "https://www.man-med.com/wp-content/uploads/2023/05/skill-india-logo.webp",
-      value: "46,000",
-    },
-  ];
+
   const Footer = () => (
     <footer className="bg-gray  bg-gray-100">
       <div className="mx-auto w-full max-w-screen-xl">
