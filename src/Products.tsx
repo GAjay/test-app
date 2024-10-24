@@ -2,8 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 const baseUrl =
-  "https://script.google.com/macros/s/AKfycbz2izRv3bqh1hDPnw0zw3JlwsDNqcMYG1yria38z1jEZOjiSJrh_ajaMKc_L_4MAOY/exec";
-
+"https://script.google.com/macros/s/AKfycbz5QeJRoLV8YTxAKG-Yz9ipFw2ZcbRrq73YGJTmW_Qzd4MlgQq4YMuD6aV-013rMpw/exec"
 type responseType = {
   product_name: string;
   product_image: string;
