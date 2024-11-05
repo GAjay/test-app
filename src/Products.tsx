@@ -2,21 +2,21 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 const baseUrl =
-"https://script.google.com/macros/s/AKfycbz5QeJRoLV8YTxAKG-Yz9ipFw2ZcbRrq73YGJTmW_Qzd4MlgQq4YMuD6aV-013rMpw/exec"
+"https://script.google.com/macros/s/AKfycbxGa0l_k5yADsm1r3VpPIVqsgh55Roc4IXWwxZWaGbKnP-fe1-aIQefKnigMCpvVbk/exec"
 type responseType = {
   product_name: string;
   product_image: string;
   product_description: string;
 };
 
-const Products = () => {
+const Products = ({sheetNo=0}) => {
   const [products, setProducts] = useState<Array<responseType>>([]);
   const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchMyAPI() {
       const response = await axios.get(
-        `${baseUrl}?key=D142EAF3DB9327B6D68B318864CFD&page=1`
+        `${baseUrl}?key=D142EAF3DB9327B6D68B318864CFD&page=1&sheetNo=${sheetNo}`
       );
       setProducts(response.data.data);
       setLoading(false);
@@ -52,12 +52,12 @@ const Products = () => {
           </>
         )}
         {!isLoading && (
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-6">
+          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-6">
             {products.map((item) => (
-              <div className="group relative max-w-sm bg-white border border-gray-200 rounded-lg shadow pt-10">
+              <div className="group relative max-w-sm bg-white border border-gray-200 rounded-lg shadow">
                 <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md ">
                   <img
-                    className="rounded-t-lg"
+                    className="rounded-t-lg aspect-square object-cover w-full"
                     src={item.product_image}
                     alt=""
                   />

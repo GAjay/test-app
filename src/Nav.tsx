@@ -1,13 +1,17 @@
 import { useCallback, useState } from "react";
-import logo from "./assets/logo.svg";
 
-const menus = [
-  { name: "About", id: "about-us" },
-  { name: "Products", id: "products" },
-  { name: "Contact Us", id: "contact-us" },
-];
+// const menus = [
 
-export default function Navbar() {
+//   { name: "Spa&Disposables", id: "contact-us" },
+//   { name: "Contact Us", id: "contact-us" },
+//   { name: "About", id: "about-us" },
+//   { name: "Products", id: "products" },
+//   { name: "Contact Us", id: "contact-us" },
+
+// ];
+
+export default function Navbar(props:{menus:Array<{name:string, id?:string, url?:string}>, logo:string}) {
+  const {menus, logo}=props
   const [isOpen, setOpen] = useState(false);
 
   const onOpenClick = useCallback(() => {
@@ -18,10 +22,7 @@ export default function Navbar() {
     <nav>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src={logo} className="h-24" alt="Aqua Clienz" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Aqua Clienz
-          </span>
+          <img src={logo} className="h-24" alt="logo" />
         </a>
         <button
           data-collapse-toggle="navbar-default"
@@ -56,8 +57,8 @@ export default function Navbar() {
             {menus.map((item) => (
               <li>
                 <a
-                  href={`#${item.id}`}
-                  key={item.id}
+                  href={item.url?item.url:`#${item.id}`}
+                  key={item.url?item.url:item.id}
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-gray md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   {item.name}
