@@ -32,7 +32,7 @@ const Products = ({sheetNo=0}) => {
     setProducts([])
     setNextPage(1)
     fetchMyAPI();
-  }, []);
+  }, [sheetNo]);
 
   return (
     <div className="bg-white" id="products">
