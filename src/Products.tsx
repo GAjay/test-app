@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Loader from "./Loader";
 
 const baseUrl =
 "https://script.google.com/macros/s/AKfycbxGa0l_k5yADsm1r3VpPIVqsgh55Roc4IXWwxZWaGbKnP-fe1-aIQefKnigMCpvVbk/exec"
@@ -12,47 +13,36 @@ type responseType = {
 const Products = ({sheetNo=0}) => {
   const [products, setProducts] = useState<Array<responseType>>([]);
   const [isLoading, setLoading] = useState(true);
+  const [nextPage, setNextPage] = useState(1)
+  const [inlineLoading,setInLineLoading]=useState(true)
+
+  async function fetchMyAPI() {
+    setInLineLoading(true)
+    const response = await axios.get(
+      `${baseUrl}?key=D142EAF3DB9327B6D68B318864CFD&page=${nextPage}&sheetNo=${sheetNo}`
+    );
+    setProducts([...products,...response.data.data]);
+    setNextPage(response.data.pages.next)
+    setLoading(false);
+    setInLineLoading(false)
+  }
+
 
   useEffect(() => {
-    async function fetchMyAPI() {
-      const response = await axios.get(
-        `${baseUrl}?key=D142EAF3DB9327B6D68B318864CFD&page=1&sheetNo=${sheetNo}`
-      );
-      setProducts(response.data.data);
-      setLoading(false);
-    }
+    setProducts([])
+    setNextPage(1)
     fetchMyAPI();
   }, []);
 
   return (
     <div className="bg-white" id="products">
-      <div className="mx-auto max-w-2xl px-4 sm:px-6  pb-24 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-2xl px-4 sm:px-6  pb-24 lg:max-w-7xl lg:px-8 justify-center ">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl text-center mt-10 mb-10">
           Our Products
         </h2>
-        {isLoading && (
-          <>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="size-10 animate-spin"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
-              />
-            </svg>
-            <h2 className="text-2xl tracking-tight text-gray-900">
-              Loading...
-            </h2>
-          </>
-        )}
+        {isLoading && <Loader/>}
         {!isLoading && (
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-6">
+          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-6 ">
             {products.map((item) => (
               <div className="group relative max-w-sm bg-white border border-gray-200 rounded-lg shadow">
                 <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md ">
@@ -72,8 +62,18 @@ const Products = ({sheetNo=0}) => {
                 </div>
               </div>
             ))}
+          
           </div>
         )}
+        
+        <div className="container py-10 px-10 mx-0 min-w-full flex flex-col items-center">
+  
+        {(nextPage!==null && nextPage!==1 && !inlineLoading)&&<button className="mt-10 text-3xl inline-flex rounded-lg border py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-sm outline-2 outline-offset-2 transition-colors border-gray-300 text-gray-700 hover:border-gray-400 active:bg-gray-100 active:text-gray-700/80"
+      onClick={fetchMyAPI}>Load More</button>
+    }
+      {inlineLoading&& !isLoading&& <Loader/>}
+      </div>
+     
       </div>
     </div>
   );

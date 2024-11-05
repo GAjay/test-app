@@ -31,7 +31,7 @@ function Aquze() {
                     Leading manufacturer, supplier, and exporter of the most
                     comprehensive range of spa-salon disposable products and
                     medical surgical disposable products and disposable catering
-                    and food supply, heavy duty cutlery.
+                    and food supply.
                   </p>
                 </div>
                 <div>
@@ -101,13 +101,6 @@ function Aquze() {
                         </div>
                       </div>
                     </div>
-
-                    <a
-                      href="#products"
-                      className="inline-flex justify-center rounded-lg border py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-sm outline-2 outline-offset-2 transition-colors border-gray-300 text-gray-700 hover:border-gray-400 active:bg-gray-100 active:text-gray-700/80"
-                    >
-                      Check Out More
-                    </a>
                   </div>
                 </div>
               </div>
