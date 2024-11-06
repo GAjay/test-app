@@ -110,7 +110,7 @@ function Aquze() {
       </div>
 
      <Aboutus bgColor="bg-gradient-to-r from-emerald-500 to-green-900"/>
-      <Products sheetNo={1}/>
+      <Products sheetNo={1} key={"product"}/>
       <ContactUs  bgColor="bg-gradient-to-r from-emerald-500 to-green-900"/>
       <div className="fixed bottom-0 right-0 p-4">
         <a

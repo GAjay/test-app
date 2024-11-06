@@ -14,25 +14,37 @@ const Products = ({sheetNo=0}) => {
   const [products, setProducts] = useState<Array<responseType>>([]);
   const [isLoading, setLoading] = useState(true);
   const [nextPage, setNextPage] = useState(1)
-  const [inlineLoading,setInLineLoading]=useState(true)
+  const [inlineLoading,setInLineLoading]=useState(false)
 
   async function fetchMyAPI() {
+    setProducts([])
+    const response = await axios.get(
+      `${baseUrl}?key=D142EAF3DB9327B6D68B318864CFD&page=${nextPage}&sheetNo=${sheetNo}`
+    );
+    setProducts(response.data.data);
+    setNextPage(response.data.pages.next)
+    setLoading(false);
+  }
+
+  async function loadMore() {
     setInLineLoading(true)
+    console.log("products", products)
     const response = await axios.get(
       `${baseUrl}?key=D142EAF3DB9327B6D68B318864CFD&page=${nextPage}&sheetNo=${sheetNo}`
     );
     setProducts([...products,...response.data.data]);
     setNextPage(response.data.pages.next)
-    setLoading(false);
     setInLineLoading(false)
   }
 
-
   useEffect(() => {
-    setProducts([])
-    setNextPage(1)
+    console.log("useEffect", products)
     fetchMyAPI();
-  }, [sheetNo]);
+    return ()=>{
+      setProducts([])
+      setNextPage(1)
+    }
+  }, []);
 
   return (
     <div className="bg-white" id="products">
@@ -69,7 +81,7 @@ const Products = ({sheetNo=0}) => {
         <div className="container py-10 px-10 mx-0 min-w-full flex flex-col items-center">
   
         {(nextPage!==null && nextPage!==1 && !inlineLoading)&&<button className="mt-10 text-3xl inline-flex rounded-lg border py-[calc(theme(spacing.2)-1px)] px-[calc(theme(spacing.3)-1px)] text-sm outline-2 outline-offset-2 transition-colors border-gray-300 text-gray-700 hover:border-gray-400 active:bg-gray-100 active:text-gray-700/80"
-      onClick={fetchMyAPI}>Load More</button>
+      onClick={()=>loadMore()}>Load More</button>
     }
       {inlineLoading&& !isLoading&& <Loader/>}
       </div>
