@@ -1,4 +1,7 @@
-
+import makeIndia from './assets/Make-in-India-Logo-PNG-HD-Transparent@.png'
+import startupindia from './assets/Startup-India-Logo1-02.png'
+import kisspng from './assets/kisspng-digital-india-government-of-india-prime-minister-o-comparex-india-private-limited-5b3d6667b99ef1.9025586015307505677603.png'
+  
   const Footer = () => (
     <footer className="bg-gray  bg-gray-100">
       <div className="mx-auto w-full max-w-screen-xl">
@@ -9,19 +12,18 @@
           <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
             <img
               className="h-10"
-              src="https://pngimagesfree.com/wp-content/uploads/Make-in-India-Logo-PNG-HD-Transparent@.png"
-              alt=""
+              src={makeIndia}
+              alt="make in india"
             />
   
             <img
               className="h-10"
-              src="https://i0.wp.com/nomadtrips.in/wp-content/uploads/2021/03/kisspng-digital-india-government-of-india-prime-minister-o-comparex-india-private-limited-5b3d6667b99ef1.9025586015307505677603.png?ssl=1"
-              alt=""
+              src={startupindia} alt="startupindia"
             />
             <img
               className="h-10"
-              src="https://i0.wp.com/www.numel.in/wp-content/uploads/2021/11/Startup-India-Logo1-02.png?fit=3042%2C788&ssl=1"
-              alt=""
+              src={kisspng}
+              alt="kisspng"
             />
           </div>
         </div>

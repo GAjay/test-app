@@ -3,7 +3,7 @@ import Aboutus from "./Aboutus";
 import ContactUs from "./Contactus";
 import Navbar from "./Nav";
 import Products from "./Products";
-import dispoableLogo from './assets/dispologo.png'
+import dispoableLogo from './assets/spalogo.svg'
 
 const menus = [
 
@@ -13,6 +13,16 @@ const menus = [
   { name: "Contact Us", id: "contact-us" },
 
 ];
+
+// https://lh3.googleusercontent.com/d/1wBsmLqbiwxFfacR-idLBD7bQGblnbteP
+// https://lh3.googleusercontent.com/d/1TAx1-YXpOo_gep28ItN980-UJMT0LWrK
+// https://lh3.googleusercontent.com/d/1sdK_8bvARENYK2dL_7ylfJDbZhbrmpah
+// https://lh3.googleusercontent.com/d/1RxU8st_93Hhw2kWKg3yiGdTsGlcQMMXX
+// https://lh3.googleusercontent.com/d/1n-vPkaTkDPfxwOmIvLwHsFCn9nNAdlgD
+// https://lh3.googleusercontent.com/d/1l1KnSqborYdFL795NPInyZL6yPXp04kK
+// https://lh3.googleusercontent.com/d/1KdN1sN36jUugkPXUbguPRYyFi56xea1f
+// https://lh3.googleusercontent.com/d/1jeaW4CepZOOAAHtfspgEUSFrMqlJpQaP
+// https://lh3.googleusercontent.com/d/1CaEIU-rQYZcXhKb2c5-sdTvRkoOWZc0h
 
 function Disposable() {
   return (
@@ -47,13 +57,13 @@ function Disposable() {
                             <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                               <img
                                 alt=""
-                                src="https://lh3.googleusercontent.com/d/1CaEIU-rQYZcXhKb2c5-sdTvRkoOWZc0h" className="h-full w-full object-cover object-center border rounded-3xl"
+                                src="https://lh3.googleusercontent.com/d/1wBsmLqbiwxFfacR-idLBD7bQGblnbteP" className="h-full w-full object-cover object-center border rounded-3xl"
                               />
                             </div>
                             <div className="h-64 w-44 overflow-hidden rounded-lg">
                               <img
                                 alt=""
-                                src="https://lh3.googleusercontent.com/d/17mEwDI4vXaYLIzQEqaMjIZt5_esZ6Y_Q"
+                                src="https://lh3.googleusercontent.com/d/1TAx1-YXpOo_gep28ItN980-UJMT0LWrK"
                                 className="h-full w-full object-cover object-center border rounded-3xl"
                               />
                             </div>
@@ -62,21 +72,21 @@ function Disposable() {
                             <div className="h-64 w-44 overflow-hidden rounded-lg">
                               <img
                                 alt=""
-                                src="https://www.man-med.com/wp-content/uploads/2024/01/Disposable-Pillow-Case-1.jpg"
+                                src="https://lh3.googleusercontent.com/d/1sdK_8bvARENYK2dL_7ylfJDbZhbrmpah"
                                 className="h-full w-full object-cover object-center border rounded-3xl"
                               />
                             </div>
                             <div className="h-64 w-44 overflow-hidden rounded-lg">
                               <img
                                 alt=""
-                                src="https://www.man-med.com/wp-content/uploads/2024/01/beard-guard-beard-cover-3.jpg"
+                                src="https://lh3.googleusercontent.com/d/1RxU8st_93Hhw2kWKg3yiGdTsGlcQMMXX"
                                 className="h-full w-full object-cover object-center border rounded-3xl"
                               />
                             </div>
                             <div className="h-64 w-44 overflow-hidden rounded-lg">
                               <img
                                 alt=""
-                                src="https://www.man-med.com/wp-content/uploads/2024/01/Blue-Anti-Skid-Polypropylene-Shoe-Cover-3.jpg"
+                                src="https://lh3.googleusercontent.com/d/1CaEIU-rQYZcXhKb2c5-sdTvRkoOWZc0h"
                                 className="h-full w-full object-cover object-center border rounded-3xl"
                               />
                             </div>
@@ -85,14 +95,15 @@ function Disposable() {
                             <div className="h-64 w-44 overflow-hidden rounded-lg">
                               <img
                                 alt=""
-                                src="https://www.man-med.com/wp-content/uploads/2024/01/mop-cap-1.jpg"
+                                
+                                src="https://lh3.googleusercontent.com/d/1KdN1sN36jUugkPXUbguPRYyFi56xea1f"
                                 className="h-full w-full object-cover object-center border rounded-3xl"
                               />
                             </div>
                             <div className="h-64 w-44 overflow-hidden rounded-lg">
                               <img
                                 alt=""
-                                src="https://www.man-med.com/wp-content/uploads/2024/01/Blue-Polypropylene-Disposable-Lab-Coat-3.jpg"
+                                src="https://lh3.googleusercontent.com/d/1l1KnSqborYdFL795NPInyZL6yPXp04kK"
                                 className="h-full w-full object-cover object-center border rounded-3xl"
                               />
                             </div>

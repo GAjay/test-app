@@ -52,7 +52,7 @@ the unique requirements of healthcare institutions.
       <div className="sm:w-[564px] w-full sm:h-[646px] h-full sm:bg-gray-100 rounded-3xl sm:border border-gray-200 relative">
         <img
           className="sm:mt-5 sm:ml-5 w-full h-full rounded-3xl object-cover"
-          src="https://5.imimg.com/data5/PI/FR/AN/SELLER-55850641/ppe-kit-500x500.png"
+          src="https://lh3.googleusercontent.com/d/1l1KnSqborYdFL795NPInyZL6yPXp04kK"
           alt="about Us image"
         />
       </div>
