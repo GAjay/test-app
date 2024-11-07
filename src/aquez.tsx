@@ -25,13 +25,12 @@ function Aquze() {
               <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
                 <div className="sm:max-w-lg">
                   <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    Beauty Spa Salon, Medical Disposable Products
+                   Clean germs with Aqua Clenz
                   </h1>
                   <p className="mt-4 text-xl text-gray-500">
-                    Leading manufacturer, supplier, and exporter of the most
-                    comprehensive range of spa-salon disposable products and
-                    medical surgical disposable products and disposable catering
-                    and food supply.
+                  Aqua Clenz is an effective solution for cleaning germs and bacteria. With its advanced formula, Aqua Clenz sanitizes surfaces, 
+                  providing a hygienic environment by eliminating harmful pathogens. Ideal for both home and office use, 
+                  it offers a quick and reliable way to maintain cleanliness and protect against germs.
                   </p>
                 </div>
                 <div>
@@ -47,37 +46,14 @@ function Aquze() {
                             <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                               <img
                                 alt=""
-                                src="https://www.man-med.com/wp-content/uploads/2024/01/Blue-Polyethylene-Shoe-Covers-1.jpg"
+                                src="https://lh3.googleusercontent.com/d/1i57q65SP3EMqfFMDSNogp1Up57sx6CRq"
                                 className="h-full w-full object-cover object-center border rounded-3xl"
                               />
                             </div>
                             <div className="h-64 w-44 overflow-hidden rounded-lg">
                               <img
                                 alt=""
-                                src="https://www.man-med.com/wp-content/uploads/2024/01/Disposable-bed-Sheet-1.jpg"
-                                className="h-full w-full object-cover object-center border rounded-3xl"
-                              />
-                            </div>
-                          </div>
-                          <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
-                            <div className="h-64 w-44 overflow-hidden rounded-lg">
-                              <img
-                                alt=""
-                                src="https://www.man-med.com/wp-content/uploads/2024/01/Disposable-Pillow-Case-1.jpg"
-                                className="h-full w-full object-cover object-center border rounded-3xl"
-                              />
-                            </div>
-                            <div className="h-64 w-44 overflow-hidden rounded-lg">
-                              <img
-                                alt=""
-                                src="https://www.man-med.com/wp-content/uploads/2024/01/beard-guard-beard-cover-3.jpg"
-                                className="h-full w-full object-cover object-center border rounded-3xl"
-                              />
-                            </div>
-                            <div className="h-64 w-44 overflow-hidden rounded-lg">
-                              <img
-                                alt=""
-                                src="https://www.man-med.com/wp-content/uploads/2024/01/Blue-Anti-Skid-Polypropylene-Shoe-Cover-3.jpg"
+                                src="https://lh3.googleusercontent.com/d/1_CTSsY-ZeO3AkAta-2YDhk3whpE3iGQD"
                                 className="h-full w-full object-cover object-center border rounded-3xl"
                               />
                             </div>
@@ -86,14 +62,7 @@ function Aquze() {
                             <div className="h-64 w-44 overflow-hidden rounded-lg">
                               <img
                                 alt=""
-                                src="https://www.man-med.com/wp-content/uploads/2024/01/mop-cap-1.jpg"
-                                className="h-full w-full object-cover object-center border rounded-3xl"
-                              />
-                            </div>
-                            <div className="h-64 w-44 overflow-hidden rounded-lg">
-                              <img
-                                alt=""
-                                src="https://www.man-med.com/wp-content/uploads/2024/01/Blue-Polypropylene-Disposable-Lab-Coat-3.jpg"
+                                src="https://lh3.googleusercontent.com/d/1BVtzjJocoK4fu8D7QBHbNj7HJZYWccR0"
                                 className="h-full w-full object-cover object-center border rounded-3xl"
                               />
                             </div>
