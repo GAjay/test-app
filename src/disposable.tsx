@@ -13,17 +13,6 @@ const menus = [
   { name: "Contact Us", id: "contact-us" },
 
 ];
-
-// https://lh3.googleusercontent.com/d/1wBsmLqbiwxFfacR-idLBD7bQGblnbteP
-// https://lh3.googleusercontent.com/d/1TAx1-YXpOo_gep28ItN980-UJMT0LWrK
-// https://lh3.googleusercontent.com/d/1sdK_8bvARENYK2dL_7ylfJDbZhbrmpah
-// https://lh3.googleusercontent.com/d/1RxU8st_93Hhw2kWKg3yiGdTsGlcQMMXX
-// https://lh3.googleusercontent.com/d/1n-vPkaTkDPfxwOmIvLwHsFCn9nNAdlgD
-// https://lh3.googleusercontent.com/d/1l1KnSqborYdFL795NPInyZL6yPXp04kK
-// https://lh3.googleusercontent.com/d/1KdN1sN36jUugkPXUbguPRYyFi56xea1f
-// https://lh3.googleusercontent.com/d/1jeaW4CepZOOAAHtfspgEUSFrMqlJpQaP
-// https://lh3.googleusercontent.com/d/1CaEIU-rQYZcXhKb2c5-sdTvRkoOWZc0h
-
 function Disposable() {
   return (
     <>

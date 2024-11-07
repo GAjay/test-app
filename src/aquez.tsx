@@ -13,7 +13,6 @@ const menus = [
   { name: "Contact Us", id: "contact-us" },
 
 ];
-
 function Aquze() {
   return (
     <>
@@ -63,6 +62,16 @@ function Aquze() {
                               <img
                                 alt=""
                                 src="https://lh3.googleusercontent.com/d/1BVtzjJocoK4fu8D7QBHbNj7HJZYWccR0"
+                                className="h-full w-full object-cover object-center border rounded-3xl"
+                              />
+                            </div>
+                          </div>
+                          <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                            <div className="h-64 w-44 overflow-hidden rounded-lg">
+                              <img
+                                alt=""
+                                
+                                src="https://lh3.googleusercontent.com/d/1qjPFP3gNOt60R3FtDb_SlLosiS0OwrRW"
                                 className="h-full w-full object-cover object-center border rounded-3xl"
                               />
                             </div>
