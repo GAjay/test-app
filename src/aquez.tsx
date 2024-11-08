@@ -71,7 +71,7 @@ function Aquze() {
                               <img
                                 alt=""
                                 
-                                src="https://stackblitz.com/~/github.com/GAjay/test-app?file=src/App.tsx"
+                                src="https://lh3.googleusercontent.com/d/16jRmZdRCUs8AXT1tqUJFMc581laOvpP3"
                                 className="h-full w-full object-cover object-center border rounded-3xl"
                               />
                             </div>
